@@ -1,7 +1,7 @@
 import React from 'react';
-import { ActionIcon, Container } from '@mantine/core';
+import { Container } from '@mantine/core';
 
-
+const iconSize = 32;
 export default function HomePage() {
   return (
     <div className="center">
@@ -9,9 +9,16 @@ export default function HomePage() {
         <h1 style={{ fontSize: 50, fontWeight: 'bold', textAlign: 'center' }}>
           Khiem's landingpage
         </h1>
-        <Container>
-          <svg aria-hidden="true" role="img" className="octicon octicon-mark-github" viewBox="0 0 16 16" width="64" height="64" fill="currentColor"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+
+        I study Computer Science in my Master's Degree at the Technische-Universität Berlin
+        <hr />
+        <Container padding={'sm'}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width={iconSize} height={iconSize} ></img>
           <a href="https://github.com/gapsong"> get to the Github profile</a>
+        </Container>
+        <Container padding={'sm'}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width={iconSize} height={iconSize} ></img>
+          <a href="https://leetcode.com/gapsong/"> get to the Leetcode profile</a>
         </Container>
       </Container>
 
