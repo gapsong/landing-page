@@ -1,8 +1,14 @@
 {
   "plugins": [],
-  "include": ["./"],
-  "exclude": ["dist"],
-
+  "include": [
+    "./"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "files": [
+    "./src/typings.d.ts"
+  ],
   "compilerOptions": {
     "jsx": "react",
     "esModuleInterop": true,
@@ -11,8 +17,13 @@
     "target": "es5",
     "sourceMap": true,
     "noEmitOnError": true,
-    "types": ["node"],
-    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
     "baseUrl": "."
   }
 }

@@ -37,10 +37,10 @@ module.exports = {
     mode === 'production'
       ? entry
       : [
-          `webpack-dev-server/client?http://localhost:${port}`,
-          'webpack/hot/only-dev-server',
-          entry,
-        ],
+        `webpack-dev-server/client?http://localhost:${port}`,
+        'webpack/hot/only-dev-server',
+        entry,
+      ],
 
   output: {
     path: output,
@@ -65,6 +65,10 @@ module.exports = {
       {
         test: /\.(svg|png|jpg|gif|woff|woff2|otf|ttf|eot)$/,
         loader: 'file-loader',
+      },
+      {
+        test: /\.md$/i,
+        loader: "raw-loader",
       },
     ],
   },
