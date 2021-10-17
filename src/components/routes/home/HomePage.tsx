@@ -20,6 +20,10 @@ export default function HomePage() {
           <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width={iconSize} height={iconSize} ></img>
           <a href="https://leetcode.com/gapsong/"> get to the Leetcode profile</a>
         </Container>
+        <Container padding={'sm'}>
+          <img src="https://images.prismic.io/lichess/5cfd2630-2a8f-4fa9-8f78-04c2d9f0e5fe_lichess-box-1024.png" width={iconSize} height={iconSize} ></img>
+          <a href="https://lichess.org/@/SoerenDerSoldat85"> get to the Lichess profile</a>
+        </Container>
       </Container>
 
     </div>
